@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Organizer</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <header>
+        <h1>File Organizer</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Select Folders</h2>
+            <form id="organizer-form">
+                <div class="form-group">
+                    <label for="source-folder">Source Folder:</label>
+                    <input type="file" id="source-folder" webkitdirectory mozdirectory multiple>
+                </div>
+                <div class="form-group">
+                    <label for="target-folder">Target Folder:</label>
+                    <input type="file" id="target-folder" webkitdirectory mozdirectory>
+                </div>
+                <button type="button" id="organize-btn">Organize Files</button>
+            </form>
+        </section>
+        <section class="status-section">
+            <h2>Status</h2>
+            <div id="status">No action yet.</div>
+        </section>
+    </main>
+    <script src="task4.js"></script>
+</body>
+</html>
